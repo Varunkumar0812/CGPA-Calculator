@@ -73,7 +73,7 @@ def sem_get() :
                 cgpa = sum / cre_sum
                 cgpa_txt = "CGPA     :    " + str(float(f'{cgpa:.3f}'))
 
-                bck = tk.Label(height = 30, width = 30, bg = "RED").place(x = 18, y = len(subs)*40 + 238)
+                bck = tk.Label(height = 30, width = 30).place(x = 18, y = len(subs)*40 + 238)
                 res = tk.Label(text = cgpa_txt, font = ('Cambria', 14)).place(x = 20, y = len(subs)*40 + 240)
 
         window.geometry('400x{}'.format(300 + len(subs)*40))
